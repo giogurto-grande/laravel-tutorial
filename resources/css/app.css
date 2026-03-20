@@ -27,25 +27,25 @@
 :root:has(input.theme-controller[value=laravelChirper]:checked),
 [data-theme="laravelChirper"] {
     color-scheme: light;
-    /* Canvas + text (neutral / cooler beige balance) /
-    --color-base-50:  #fafafa;  / almost pure white, very faint gray /
-    --color-base-100: #f7f7f8;  / neutral canvas /
-    --color-base-200: #ededee;  / light neutral gray (still contrasty w/ border) /
-    --color-base-300: #e0e1e3;  / mid gray, cooler but not blue /
-    --color-base-content: #1a1a1c; / neutral dark, softer than #111113 */
+    /* Canvas + text (neutral / cooler beige balance) */
+    --color-base-50:  #fafafa;
+    --color-base-100: #f7f7f8;
+    --color-base-200: #ededee;
+    --color-base-300: #e0e1e3;
+    --color-base-content: #1a1a1c;
     /* Text tones */
     --text-12: var(--color-base-content);
     --text-10: color-mix(in oklab, var(--color-base-content) 64%, transparent);
-    /* Brand / actions /
-    --color-primary: #5580d2;            / cooler button blue /
+    /* Brand / actions */
+    --color-primary: #5580d2;
     --color-primary-content: #ffffff;
-    --color-secondary: #2f3136;          / neutral charcoal */
+    --color-secondary: #2f3136;
     --color-secondary-content: #ffffff;
     --link: #5580d2;
     --link-hover: color-mix(in oklab, #5580d2 80%, black);
-    /* Borders / elevation /
+    /* Borders / elevation */
     --border: 1px;
-    --border-color-soft: rgba(0, 0, 0, 0.08); / slightly stronger for visibility */
+    --border-color-soft: rgba(0, 0, 0, 0.08);
     /* Radii + misc */
     --radius-xs: 3px;
     --radius-sm: 5px;
@@ -81,7 +81,7 @@ box-shadow: none !important;
 / kill all shadows /
 transition: none;
 / no hover lift */
-}
+
 :where(.card:hover),
 :where(.card.shadow),
 :where(.card.shadow:hover) {
@@ -142,7 +142,7 @@ line-height: 1.25rem;
 / align with text-base /
 padding-inline: 1rem;
 / a bit more horizontal breathing room */
-}
+
 :where(.btn-primary),
 :where(a.btn-primary) {
     background: var(--color-primary);
